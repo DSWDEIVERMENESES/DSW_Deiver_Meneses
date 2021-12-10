@@ -1,0 +1,75 @@
+header{
+    background-color: #28DF99;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+nav{
+    background-color: #7deeaa;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+   }
+
+   nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    margin: 10px;
+    
+    }
+
+  nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: absolute;
+   }
+   nav ul li ul{
+    display: none;
+     }
+   
+   a{
+       text-decoration: none;
+       font-size: 15px;
+       padding: 12px 20px;
+       display: block;
+    }
+
+   a:hover{
+       text-decoration: underline;
+       background-color: lime;
+   }
+
+  nav ul li:hover > ul {
+    display: block;
+   }
+section{
+    background-color: #D2F6C5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-column: 1/4;
+}
+aside{
+    background-color: rgb(53, 194, 100);
+    grid-column: 4/5;
+}
+footer{
+    background-color: springgreen;
+    text-align: center;
+    font-family: Tahoma;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.clearfix{
+    clear:both;
+}
+.center{
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    
+}
